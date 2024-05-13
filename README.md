@@ -20,18 +20,18 @@ prueba de front
 
 ## Run Locally
 
-Clone the project
+Clonar projecto
 
 ```bash
   git clone https://github.com/tomasmolinaarias/Historias-entre-Sorbos.git
 ```
 
-Go to the project directory
+Abrir projecto
 
 ```bash
   cd Historias-entre-Sorbos
 ```
-
+Url GitHub
 ```GITPAGE
     https://tomasmolinaarias.github.io/Historias-entre-Sorbos/
 ```
