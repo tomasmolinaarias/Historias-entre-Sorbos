@@ -31,7 +31,7 @@ Abrir projecto
 ```bash
   cd Historias-entre-Sorbos
 ```
-Url GitHub
+Url GitHub Pages
 ```GITPAGE
     https://tomasmolinaarias.github.io/Historias-entre-Sorbos/
 ```

@@ -137,62 +137,71 @@ body {
 
 
 /* Form */
-.form-register {
-    width:70%;
-    background: #24303c;
-    padding: 30px;
+
+.container-form{
+    width: 100%;
+    max-width: 1100px;
     margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-    margin-bottom: 40px;
-  }
-  
-  .form-register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-  
-  .controls {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-  }
-  
-  .form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-  }
-  
-  .form-register a {
-    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
     text-decoration: none;
-  }
-  
-  .form-register a:hover {
-    color: white;
-    text-decoration: underline;
-  }
-  
-  .form-register .botons {
     width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
     font-size: 16px;
-  }
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    outline: 0px;
+    box-shadow: 17px 13px 51px -11px rgba(0,0,0,0.56);
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+    
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #001A49;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    box-shadow: 17px 13px 51px -11px rgba(0,0,0,0.56);
+}
+.container-form .btn-enviar:hover{
+    background: #2091F9;
+}
+
 /* Footer */
 .footer{
     background-color: #1D293F;
