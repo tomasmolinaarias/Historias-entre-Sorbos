@@ -177,7 +177,7 @@ body {
     margin-bottom: 20px;
     border-radius: 9px;
     outline: 0px;
-    box-shadow: 17px 13px 51px -11px rgba(0,0,0,0.56);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
 }
 .container-form form textarea{
     max-width: 530px;
@@ -196,12 +196,11 @@ body {
     border-radius: 9px;
     cursor: pointer;
     transition: all 300ms ease;
-    box-shadow: 17px 13px 51px -11px rgba(0,0,0,0.56);
+    
 }
 .container-form .btn-enviar:hover{
     background: #2091F9;
 }
-
 /* Footer */
 .footer{
     background-color: #1D293F;
