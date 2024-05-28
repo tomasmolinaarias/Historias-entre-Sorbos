@@ -129,12 +129,10 @@ body {
     margin-bottom: 25px;
 }
 
-
 .about__paragraph {
     line-height: 1.7;
     margin-bottom: 90px;
 }
-
 
 /* Eventos */
 .events-section {
@@ -187,6 +185,7 @@ body {
 .event-details i {
     margin-right: 5px;
 }
+
 /* Footer */
 .footer{
     background-color: #1D293F;
