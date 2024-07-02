@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias entre Sorbos</title>
+    <link rel="shortcut icon" href="../img/coffee-cup.svg">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/comentario.css">
+    <script defer src="../js/comentarios.js"></script>
+</head>
+<body>
+    <header class="hero" id="inicio">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Historias entre Sorbos</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items"><a href="../../index.html" class="nav__links">Inicio</a></li>
+                <li class="nav__items"><a href="../page/eventos.html" class="nav__links">Eventos</a></li>
+                <li class="nav__items"><a href="../page/contacto.html" class="nav__links">Contacto</a></li>
+                <li class="nav__items"><a href="#" class="nav__links">Comentarios</a></li>
+            </ul>
+            <img src="../img/close.svg" class="nav__close">
+            <div class="nav__menu"><img src="../img/menu.svg" class="nav__img"></div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">Comentarios</h1>
+            <p class="hero__paragraph">Siempre hay algo nuevo que descubrir en Historias entre Sorbos.</p>
+            <a href="#Eventos" class="cta">Ver los comentarios</a>
+        </section>
+    </header>
+    <main>
+        <section class="events-section container about" id="Eventos">
+            <div class="container">
+                <h2 class="subtitle">Comentarios y Charlas</h2>
+                <p class="about__paragraph">El escenario perfecto para tus charlas más especiales.</p>
+                <section class="comment-section container">
+                    <h2>Comentarios</h2>
+                    <div id="error-message"></div>
+                    <form id="commentForm">
+                        <input type="text" id="nameInput" placeholder="Tu nombre" required>
+                        <textarea id="commentInput" placeholder="Escribe tu comentario aquí..." required></textarea>
+                        <button type="submit">Enviar Comentario</button>
+                    </form>
+                    <button id="toggleCommentsBtn">Mostrar Comentarios</button>
+                    <div id="commentsDisplay"></div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__container container">
+            <img src="../img/coffe-cupFooter.svg" alt="" class="footer_img_logo">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Historias entre Sorbos</h2>
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items"><a href="../../index.html" class="nav__links">Inicio</a></li>
+                    <li class="nav__items"><a href="./eventos.html" class="nav__links">Eventos</a></li>
+                    <li class="nav__items"><a href="./contacto.html" class="nav__links">Contacto</a></li>
+                    <li class="nav__items"><a href="../page/comentarios.html" class="nav__links">Comentarios</a></li>
+
+                </ul>
+            </nav>
+        </section>
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://web.facebook.com/" target="_blank"><img src="../img/facebook.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.svg" class="footer__img"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../img/youtube.svg" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; <b>Victor Molina</b></h3>
+        </section>
+    </footer>
+</body>
+</html>

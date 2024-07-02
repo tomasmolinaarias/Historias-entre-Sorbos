@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/contacto.jpg');
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/comentariosFondo.jpg');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
@@ -129,95 +129,92 @@ body {
     margin-bottom: 25px;
 }
 
-
 .about__paragraph {
     line-height: 1.7;
     margin-bottom: 90px;
 }
 
+.events-section {
+    padding: 30px;
+}
 
-/* Form */
-
-.container-form{
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 50px;
-    margin-top: 90px;
-}
-.container-form h2{
-    margin-bottom: 15px;
-    font-size: 35px
-}
-.container-form p{
-    font-size: 17px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-.container-form a{
-    font-size: 17px;
-    display: inline-block;
-    text-decoration: none;
-    width: 100%;
-    margin-bottom: 15px;
-    color: black;
-    font-weight: 700;
-}
-.container-form a i{
-    color: orange;
-    margin-right: 10px;
-}
-.container-form form .campo, textarea{
-    width: 100%;
-    padding: 15px 10px;
-    font-size: 16px;
-    border: 1px solid #dbdbdb;
+.events-section h2 {
+    text-align: center;
     margin-bottom: 20px;
-    border-radius: 9px;
-    outline: 0px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
 }
-.container-form form textarea{
-    max-width: 530px;
-    min-width: 530px;
-    min-height: 140px;
-    max-height: 150px;
-    
+
+.event-card {
+    display: flex;
+    margin-bottom: 10%;
 }
-.container-form .btn-enviar{
-    padding: 15px;
-    font-size: 16px;
-    border: none;
-    outline: 0px;
-    background: #001A49;
+
+.event-image {
+    flex-basis: 30%;
+    margin-right: 8em;
+}
+
+.event-image img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.event-info {
+    flex-basis: 70%;
+}
+
+.event-info h3 {
+    margin-bottom: 10px;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.event-details span {
+    margin-right: 15px;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.event-details i {
+    margin-right: 5px;
+}
+
+.btn-more {
+    background-color: #2091F9;
     color: white;
-    border-radius: 9px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
-    transition: all 300ms ease;
-    
+    border-radius: 5px;
 }
-.container-form .btn-enviar:hover{
-    background: #2091F9;
-}
-/* Footer */
-.footer{
+
+.footer {
     background-color: #1D293F;
 }
 
-.footer__title{
+.footer__title {
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 30px;
 }
 
-.footer__title, .footer__newsletter{
+.footer__title, .footer__newsletter {
     color: #fff;
 }
 
-
-.footer__container{
+.footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -225,7 +222,7 @@ body {
     padding-bottom: 60px;
 }
 
-.nav--footer{
+.nav--footer {
     padding-bottom: 20px;
     display: grid;
     gap: 1em;
@@ -233,22 +230,23 @@ body {
     height: 100%;
 }
 
-.nav__link--footer{
+.nav__link--footer {
     display: flex;
     margin: 0;
     margin-right: 20px;
     flex-wrap: wrap;
 }
-.footer__inputs{
+
+.footer__inputs {
     margin-top: 10px;
     display: flex;
     overflow: hidden;
 }
 
-.footer__input{
+.footer__input {
     background-color: #fff;
     height: 50px;
-    display: block;
+    display:block;
     padding-left: 10px;
     border-radius: 6px;
     font-size: 1rem;
@@ -257,11 +255,11 @@ body {
     margin-right: 16px;
 }
 
-.footer__submit{
+.footer__submit {
     margin-left: auto;
     display: inline-block;
     height: 50px;
-    padding: 0 20px ;
+    padding: 0 20px;
     background-color: #2091F9;
     border: none;
     font-size: 1rem;
@@ -270,50 +268,114 @@ body {
     cursor: pointer;
 }
 
-.footer__copy{
+.footer__copy {
     --padding-container: 30px 0;
     text-align: center;
     color: #fff;
 }
 
-.footer__copyright{
+.footer__copyright {
     font-weight: 300;
 }
 
-.footer__icons{
+.footer__icons {
     margin-bottom: 10px;
 }
 
-.footer__img{
+.footer__img {
     width: 30px;
 }
-.footer_img_logo{
+.footer_img_logo {
     width: 90px;
 }
-#error-message {
-    color: rgb(238, 238, 238);
-    background-color: red;
-    font-weight: bold;
-    text-align: center;
-    border: 1px solid red;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: none; /* Hidden by default, will be displayed when there is an error */
+
+.comment-section {
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-#success-message {
-    color: rgb(247, 247, 247);
-    background-color: green;
-    font-weight: bold;
+.comment-section h2 {
     text-align: center;
-    border: 1px solid green;
+}
+
+#commentForm input[type="text"], #commentForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#commentForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2091F9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#commentForm button:hover {
+    background-color: #007BFF;
+}
+
+#toggleCommentsBtn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#toggleCommentsBtn:hover {
+    background-color: #45A049;
+}
+
+#commentsDisplay {
+    display: none; 
+    margin-top: 10px;
+}
+
+.comment {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #1D293F;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__img {
+    width: 30px;
+    margin-right: 10px;
+}
+#error-message {
+    display: none;
+    color: red;
+    background-color: #ffdddd;
+    border: 1px solid red;
+    border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    display: none; 
+    font-weight: bold;
+    text-align: center;
 }
 
 input.error,

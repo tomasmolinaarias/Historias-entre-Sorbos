@@ -9,32 +9,35 @@
     <!--Para que se vea igual en todos los navegadores  normalize-->
     <link rel="stylesheet" href="../style/normalize.css">
     <link rel="stylesheet" href="../style/eventos.css">
+    <script src="../js/evento.js"></script>
 </head>
 
 <body>
     <header class="hero" id="inicio"">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <h2 class="nav__title">Historias entre Sorbos</h2>
-            </div>
+        <nav class=" nav container">
+        <div class="nav__logo">
+            <h2 class="nav__title">Historias entre Sorbos</h2>
+        </div>
 
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="../../index.html" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../page/eventos.html" class="nav__links">Eventos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="./contacto.html" class="nav__links">Contacto</a>
-                </li>
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="../../index.html" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+                <a href="./eventos.html" class="nav__links">Eventos</a>
+            </li>
+            <li class="nav__items">
+                <a href="./contacto.html" class="nav__links">Contacto</a>
+            </li>
+            <li class="nav__items"><a href="../page/comentarios.html" class="nav__links">Comentarios</a></li>
 
-                <img src="../img/close.svg" class="nav__close">
-            </ul>
 
-            <div class="nav__menu">
-                <img src="../img/menu.svg" class="nav__img">
-            </div>
+            <img src="../img/close.svg" class="nav__close">
+        </ul>
+
+        <div class="nav__menu">
+            <img src="../img/menu.svg" class="nav__img">
+        </div>
         </nav>
 
         <section class="hero__container container">
@@ -55,11 +58,17 @@
                     </div>
                     <div class="event-info">
                         <h3>Cafetería del Metaverso</h3>
-                        <p>Reúnete con un sabroso cafe en una conversación interesante sobre el metaverso y su potencial transformador. Este evento interactivo fomentará las conexiones, el intercambio de ideas y la exploración del impacto de esta tecnología inmersiva en nuestras vidas.</p>
+                        <p class="event-summary">Reúnete con un sabroso cafe en una conversación interesante sobre el
+                            metaverso y su potencial transformador.</p>
                         <div class="event-details">
-                            <span><i class="fas fa-calendar-alt"></i> 14 de Mayo, 2024</span>
-                            <span><i class="fas fa-clock"></i> 18:00 hrs.</span>
+                            <p>Este evento interactivo fomentará las conexiones, el intercambio de ideas y la
+                                exploración del impacto de esta tecnología inmersiva en nuestras vidas.</p>
+                            <div>
+                                <span><i class="fas fa-calendar-alt"></i> 14 de Mayo, 2024</span>
+                                <span><i class="fas fa-clock"></i> 18:00 hrs.</span>
+                            </div>
                         </div>
+                        <button class="btn-more">Leer más</button>
                     </div>
                 </div>
 
@@ -69,21 +78,26 @@
                     </div>
                     <div class="event-info">
                         <h3>Noche de Juegos del Café</h3>
-                        <p>Reúne a amigos y familiares para una noche de diversión clásica con juegos de mesa y café caliente en tu acogedora cafetería. Este evento fomentará la interacción social, la sana competencia y el disfrute de un ambiente relajado mientras disfrutan un cafe</p>
-                        <h5>Preparémonos para una tarde de diversión con juegos emocionantes:</h5>
-                        <ol>
-                            <li>catan</li>
-                            <li>Pictionary</li>
-                            <li>Monopoly</li>
-                            <li>Risk</li>
-                            <li>Scrabble</li>
-                        </ol>
-                        <div class="event-details">
-                            <span><i class="fas fa-calendar-alt"></i> 20 al 27 de Mayo, 2024</span>
-                            <span><i class="fas fa-clock"></i> De 18:00 a 21:00 hrs.</span>
+                        <p class="event-summary">Reúne a amigos y familiares para una noche de diversión clásica con
+                            juegos de mesa y café caliente en tu acogedora cafetería.</p>
+                        <div class="event-details" style="display: none;">
+                            <p>Este evento fomentará la interacción social, la sana competencia y el disfrute de un
+                                ambiente relajado mientras disfrutan un cafe.</p>
+                            <h5>Preparémonos para una tarde de diversión con juegos emocionantes:</h5>
+                            <ol>
+                                <li>Catan</li>
+                                <li>Pictionary</li>
+                                <li>Monopoly</li>
+                                <li>Risk</li>
+                                <li>Scrabble</li>
+                            </ol>
+                            <div>
+                                <span><i class="fas fa-calendar-alt"></i> 20 al 27 de Mayo, 2024</span>
+                                <span><i class="fas fa-clock"></i> De 18:00 a 21:00 hrs.</span>
+                            </div>
                         </div>
+                        <button class="btn-more">Leer más</button>
                     </div>
-                    
                 </div>
 
                 <div class="event-card">
@@ -92,8 +106,13 @@
                     </div>
                     <div class="event-info">
                         <h3>Charla sobre Arte</h3>
-                        <p>Invitamos a un artista para que dé una charla sobre un tema específico relacionado con el arte, como la historia del arte, diferentes movimientos artísticos o el proceso creativo. Ofrece café, té y refrigerios ligeros para que los asistentes los disfruten durante la charla y después.</p>
-                        <h5>Artistas estarán presentes en el evento:</h5>
+                        <p class="event-summary">Invitamos a un artista para que dé una charla sobre un tema específico
+                            relacionado con el arte, como la historia del arte, diferentes movimientos artísticos o el
+                            proceso creativo.</p>
+                        <div class="event-details">
+                            <p>Ofrece café, té y refrigerios ligeros para que los asistentes los disfruten durante la
+                                charla y después.</p>
+                            <h5>Artistas estarán presentes en el evento:</h5>
                             <ul>
                                 <li>Kehinde Wiley</li>
                                 <li>Endless Summer</li>
@@ -101,20 +120,22 @@
                                 <li>Banksy</li>
                                 <li>Danaé Figueroa</li>
                             </ul>
-                        <div class="event-details">
-                            <span><i class="fas fa-calendar-alt"></i> 28 de Mayo, 2024</span>
-                            <span><i class="fas fa-clock"></i> 19:00 hrs.</span>
+                            <div>
+                                <span><i class="fas fa-calendar-alt"></i> 28 de Mayo, 2024</span>
+                                <span><i class="fas fa-clock"></i> 19:00 hrs.</span>
+                            </div>
                         </div>
+                        <button class="btn-more">Leer más</button>
                     </div>
                 </div>
             </div>
         </section>
-        
+
     </main>
     <footer class="footer">
         <section class="footer__container container">
-            <img src="../img/coffe-cupFooter.svg" alt="" class="footer_img_logo" >
-              
+            <img src="../img/coffe-cupFooter.svg" alt="" class="footer_img_logo">
+
             <nav class="nav nav--footer">
                 <h2 class="footer__title">Historias entre Sorbos</h2>
 
@@ -128,17 +149,22 @@
                     <li class="nav__items">
                         <a href="./contacto.html" class="nav__links">Contacto</a>
                     </li>
+                    <li class="nav__items"><a href="../page/comentarios.html" class="nav__links">Comentarios</a></li>
+
                 </ul>
             </nav>
-          
-            
+
+
         </section>
 
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="https://web.facebook.com/" class="footer__icons" target="_blank"><img src="../img/facebook.svg" class="footer__img"></a>
-                <a href="https://www.instagram.com/" class="footer__icons" target="_blank"><img src="../img/instagram.svg" class="footer__img"></a>
-                <a href="https://www.youtube.com/" class="footer__icons" target="_blank"><img src="../img/youtube.svg" class="footer__img"></a>
+                <a href="https://web.facebook.com/" class="footer__icons" target="_blank"><img src="../img/facebook.svg"
+                        class="footer__img"></a>
+                <a href="https://www.instagram.com/" class="footer__icons" target="_blank"><img
+                        src="../img/instagram.svg" class="footer__img"></a>
+                <a href="https://www.youtube.com/" class="footer__icons" target="_blank"><img src="../img/youtube.svg"
+                        class="footer__img"></a>
             </div>
 
             <h3 class="footer__copyright">Derechos reservados &copy; <b>Victor Molina</b></h3>

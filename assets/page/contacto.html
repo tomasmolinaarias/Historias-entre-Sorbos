@@ -6,37 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historias entre Sorbos</title>
     <link rel="shortcut icon" href="../img/coffee-cup.svg">
-    <!--Para que se vea igual en todos los navegadores  normalize-->
     <link rel="stylesheet" href="../style/normalize.css">
     <link rel="stylesheet" href="../style/contacto.css">
+    <script defer src="../js/contacto.js"></script>
 </head>
 
 <body>
-    <header class="hero" id="inicio"">
+    <header class="hero" id="inicio">
         <nav class="nav container">
             <div class="nav__logo">
                 <h2 class="nav__title">Historias entre Sorbos</h2>
             </div>
-
             <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="../../index.html" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="../page/eventos.html" class="nav__links">Eventos</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
-                </li>
-
-                <img src="../img/close.svg" class="nav__close">
+                <li class="nav__items"><a href="../../index.html" class="nav__links">Inicio</a></li>
+                <li class="nav__items"><a href="../page/eventos.html" class="nav__links">Eventos</a></li>
+                <li class="nav__items"><a href="#" class="nav__links">Contacto</a></li>
+                <li class="nav__items"><a href="../page/comentarios.html" class="nav__links">Comentarios</a></li>
             </ul>
-
-            <div class="nav__menu">
-                <img src="../img/menu.svg" class="nav__img">
-            </div>
+            <img src="../img/close.svg" class="nav__close">
+            <div class="nav__menu"><img src="../img/menu.svg" class="nav__img"></div>
         </nav>
-
         <section class="hero__container container">
             <h1 class="hero__title">Contacto</h1>
             <p class="hero__paragraph">Historias entre Sorbos es más que una plataforma, es una comunidad.</p>
@@ -44,63 +33,63 @@
         </section>
     </header>
     <main>
-          <section class="container about" id="Contactanos">
+        <section class="container about" id="Contactanos">
             <h2 class="subtitle">¡Contáctanos y danos tu opinión!</h2>
-            <p class="about__paragraph">¿Tienes una historia que contar? ¿Quieres participar en nuestra comunidad? ¡No dudes en contactarnos!</p>
+            <p class="about__paragraph">¿Tienes una historia que contar? ¿Quieres participar en nuestra comunidad? ¡No
+                dudes en contactarnos!</p>
             <div class="container-form">
                 <div class="info-form">
-                    <!-- <h2>Contáctanos</h2> -->
-                    <p>Tu voz es importante para nosotros. Comparte tus ideas, sugerencias o simplemente saluda. ¡Estamos aquí para ti!</p>
+                    <p>Tu voz es importante para nosotros. Comparte tus ideas, sugerencias o simplemente saluda.
+                        ¡Estamos aquí para ti!</p>
                     <a href="#"><i class="fa fa-phone"></i>+56 2 2222-2222</a>
                     <a href="#"><i class="fa fa-envelope"></i> HistoriasEntreSorbos@coffe.com</a>
                     <a href="#"><i class="fa fa-map-marked"></i>Avenida Providencia 1997, Local 10</a>
-                    <a href="#"><i class="fa fa-map-marked" ></i><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.077993449874!2d-70.61260731851911!3d-33.421210920890545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf689233fcd7%3A0x707cf29ef3340c7e!2sProvidencia%201997%2C%20Local%2010%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1715664346938!5m2!1ses!2scl" width="400" height="200" style="border:0; box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
-
+                    <a href="#"><i class="fa fa-map-marked"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.077993449874!2d-70.61260731851911!3d-33.421210920890545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf689233fcd7%3A0x707cf29ef3340c7e!2sProvidencia%201997%2C%20Local%2010%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1715664346938!5m2!1ses!2scl"
+                                width="400" height="200"
+                                style="border:0; box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></i></a>
                 </div>
-                <form action="#" autocomplete="off">
+                <form id="contactForm" action="#" autocomplete="off">
+                    <div id="error-message"></div>
+                    <div id="success-message" style="display: none;">¡Mensaje enviado con éxito!</div>
                     <select id="contact-reason" class="campo">
                         <option value="">Seleccione el tipo de mensaje</option>
                         <option value="evento">Organizar un evento</option>
                         <option value="opinion">Comentar o sugerir</option>
                         <option value="reclamo">Reclamar o presentar una queja</option>
                     </select>
-                    <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
-                    <input type="emal" name="email" placeholder="Tu Email" class="campo">
-                    <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" class="campo" required>
+                    <input type="email" id="email" name="email" placeholder="Tu Email" class="campo" required>
+                    <textarea id="mensaje" name="mensaje" placeholder="Tu Mensaje..." required></textarea>
+                    <div id="error-message"></div>
                     <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
                 </form>
             </div>
         </section>
+    </main>
     <footer class="footer">
-        <section class="footer__container container ">
-            <img src="../img/coffe-cupFooter.svg" alt="" class="footer_img_logo" >
-              
+        <section class="footer__container container">
+            <img src="../img/coffe-cupFooter.svg" alt="" class="footer_img_logo">
             <nav class="nav nav--footer">
                 <h2 class="footer__title">Historias entre Sorbos</h2>
-
                 <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="../../index.html" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./eventos.html" class="nav__links">Eventos</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./contacto.html" class="nav__links">Contacto</a>
-                    </li>
+                    <li class="nav__items"><a href="../../index.html" class="nav__links">Inicio</a></li>
+                    <li class="nav__items"><a href="./eventos.html" class="nav__links">Eventos</a></li>
+                    <li class="nav__items"><a href="./contacto.html" class="nav__links">Contacto</a></li>
+                    <li class="nav__items"><a href="../page/comentarios.html" class="nav__links">Comentarios</a></li>
                 </ul>
             </nav>
-          
-            
         </section>
-
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="https://web.facebook.com/" class="footer__icons" target="_blank"><img src="../img/facebook.svg" class="footer__img"></a>
-                <a href="https://www.instagram.com/" class="footer__icons" target="_blank"><img src="../img/instagram.svg" class="footer__img"></a>
-                <a href="https://www.youtube.com/" class="footer__icons" target="_blank"><img src="../img/youtube.svg" class="footer__img"></a>
+                <a href="https://web.facebook.com/" target="_blank"><img src="../img/facebook.svg"
+                        class="footer__img"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.svg"
+                        class="footer__img"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../img/youtube.svg"
+                        class="footer__img"></a>
             </div>
-
             <h3 class="footer__copyright">Derechos reservados &copy; <b>Victor Molina</b></h3>
         </section>
     </footer>

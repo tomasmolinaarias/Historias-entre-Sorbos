@@ -142,7 +142,6 @@ body {
 .events-section h2 {
     text-align: center;
     margin-bottom: 20px;
-
 }
 
 .event-card {
@@ -153,7 +152,6 @@ body {
 .event-image {
     flex-basis: 30%;
     margin-right: 8em;
-
 }
 
 .event-image img {
@@ -172,37 +170,53 @@ body {
 
 .event-details {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
     margin-top: 10px;
+    padding-left: 20px;
 }
 
 .event-details span {
     margin-right: 15px;
     font-size: 0.8rem;
     color: #888;
+    margin-bottom: 5px;
 }
 
 .event-details i {
     margin-right: 5px;
 }
 
+.btn-more {
+    background-color: #2091F9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 /* Footer */
-.footer{
+.footer {
     background-color: #1D293F;
 }
 
-.footer__title{
+.footer__title {
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 30px;
 }
 
-.footer__title, .footer__newsletter{
+.footer__title, .footer__newsletter {
     color: #fff;
 }
 
-
-.footer__container{
+.footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -210,7 +224,7 @@ body {
     padding-bottom: 60px;
 }
 
-.nav--footer{
+.nav--footer {
     padding-bottom: 20px;
     display: grid;
     gap: 1em;
@@ -218,22 +232,23 @@ body {
     height: 100%;
 }
 
-.nav__link--footer{
+.nav__link--footer {
     display: flex;
     margin: 0;
     margin-right: 20px;
     flex-wrap: wrap;
 }
-.footer__inputs{
+
+.footer__inputs {
     margin-top: 10px;
     display: flex;
     overflow: hidden;
 }
 
-.footer__input{
+.footer__input {
     background-color: #fff;
     height: 50px;
-    display: block;
+    display:block;
     padding-left: 10px;
     border-radius: 6px;
     font-size: 1rem;
@@ -242,11 +257,11 @@ body {
     margin-right: 16px;
 }
 
-.footer__submit{
+.footer__submit {
     margin-left: auto;
     display: inline-block;
     height: 50px;
-    padding: 0 20px ;
+    padding: 0 20px;
     background-color: #2091F9;
     border: none;
     font-size: 1rem;
@@ -255,23 +270,52 @@ body {
     cursor: pointer;
 }
 
-.footer__copy{
+.footer__copy {
     --padding-container: 30px 0;
     text-align: center;
     color: #fff;
 }
 
-.footer__copyright{
+.footer__copyright {
     font-weight: 300;
 }
 
-.footer__icons{
+.footer__icons {
     margin-bottom: 10px;
 }
 
-.footer__img{
+.footer__img {
     width: 30px;
 }
-.footer_img_logo{
+.footer_img_logo {
     width: 90px;
+}
+.event-info ul, .event-info ol {
+    list-style-type: none; /* Elimina los marcadores predeterminados */
+    padding-left: 0; /* Elimina el padding por defecto */
+}
+
+.event-info li {
+    position: relative; /* Establece posición relativa para los elementos de la lista */
+    padding-left: 20px; /* Espacio para el guión y el texto */
+    margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
+.event-info li::before {
+    content: '-'; /* Añade el guión */
+    position: absolute; /* Posiciona el guión de forma absoluta */
+    left: 0; /* Alinea el guión a la izquierda */
+    top: 0; /* Alinea el guión con la parte superior del texto */
+    width: 10px; /* Espacio reservado para el guión */
+}
+.event-info h5 {
+    margin-top: 20px; /* Ajusta este valor según necesites más o menos espacio */
+    margin-bottom: 10px; /* Ajusta si necesitas espacio debajo del h5 antes de la lista */
+}
+.event-details {
+    display: none; /* Asegura que los detalles estén ocultos inicialmente */
+}
+
+.event-info.active .event-details {
+    display: block; /* Muestra los detalles cuando la clase 'active' es añadida */
 }
